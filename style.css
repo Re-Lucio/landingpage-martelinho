@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', SemiBold;
+    font-size: 600;
+}
+
+html{
+    height: 100vh;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+    height: ;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    font-size: 20px;
+    color: #ad5b35;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: white;
+    padding: 20px 4%;
+}
+
+header.rolagem a{
+    color: #ad5b35;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #ad5b35;
+}
+
+header ul li a:hover{
+    color: #FFAE81;
+}
+
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #ad5b35;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url('image/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 3em;
+}
+
+.banner h1 span{
+    color: #FFAE81;
+}
+
+.sobre-tecnica{
+    padding: 65px 65px;
+    background-color: rgba(89, 105, 104);
+    color: #FFAE81;
+    text-align: center;
+    height: 65vh;
+    font-family: 'Space Grotesk', Medium;
+    font-size: 500;
+}
+
+.sobre-tecnica h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.sobre-tecnica p{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    background-color: rgba(89, 105, 104);
+}
+
+.galeria img {
+    width: calc(25% - 20px);
+    margin: 10px;
+    padding: 15px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.galeria img:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    background-color: #ad5b35;
+    color: black;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer p{
+    font-size: 1.2em;
+    gap: 10px;
+}
+
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: #FFAE81;
+}
+
+@media (max-width: 768px){
+    header ul li{
+        margin: 0 20px;
+    }
+
+    header ul li a{
+        font-size: 14px;
+    }
+
+    .banner h1{
+        font-size: 2.5em;
+    }
+
+    .sobre-tecnica{
+        padding: 20px;
+    }
+
+    .sobre-tecnica h1{
+        font-size: 1.5em;
+    }
+
+    .sobre-tecnica p{
+        font-size: 1em;
+    }
+
+    .galeria img{
+        width: calc(50% - 20px);<div class="footer-social">
+    <a href="https://www.instagram.com/martelinhodeouroferreira/">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.facebook.com/ferreiramdeouro?locale=pt_BR">
+        <i class="fab fa-facebook-square" aria-hidden="true"></i>
+    </a>
+</div>
+    }
+}
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 2em;
+}
